@@ -17,8 +17,9 @@ namespace DataStructure
             l1.Display();
             //l1.ReverseList();
             //l1.Display2();
-            l1.RemoveFirstNode();
-            Console.WriteLine("removed first node");
+            //l1.RemoveFirstNode();
+            l1.RemoveLastNode();
+            Console.WriteLine("removed last node");
             l1.Display();
         }
 
