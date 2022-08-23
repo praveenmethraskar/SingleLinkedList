@@ -19,8 +19,11 @@ namespace DataStructure
             //l1.Display2();
             //l1.RemoveFirstNode();
             l1.RemoveLastNode();
-            Console.WriteLine("removed last node");
+            Console.WriteLine("removed last node"); 
             l1.Display();
+            Console.WriteLine(l1.Search(30));
+            
+             
         }
 
     }

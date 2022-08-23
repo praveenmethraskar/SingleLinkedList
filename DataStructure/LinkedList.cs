@@ -35,7 +35,7 @@ namespace DataStructure
             if(head == null)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("The list Contains: ");
+                Console.WriteLine("The list dose not Contains: ");
                 Console.ResetColor();
             }
             else
@@ -138,6 +138,19 @@ namespace DataStructure
             }
             newNode.Next = null;
             return head;
+        }
+
+        public Node Search(int value)
+        {
+            while(this.head != null)
+            {
+                if(this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.Next;
+            }
+            return null;
         }
 
     }
