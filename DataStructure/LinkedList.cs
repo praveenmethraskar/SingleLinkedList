@@ -140,17 +140,25 @@ namespace DataStructure
             return head;
         }
 
-        public Node Search(int value)
-        {
-            while(this.head != null)
+        internal Node Search(int value)
+        { 
+
+            Node temp = this.head;
+
+
+            while(temp != null)
             {
-                if(this.head.data == value)
+                if(temp.data == value)
                 {
-                    return this.head;
+                    Console.WriteLine("Node is found : " +value);
+                    return null;
+                    //this.head = this.head.Next;
                 }
-                this.head = this.head.Next;
+                temp = temp.Next;
             }
+            Console.WriteLine("{0} is not a linkedlist node", value);
             return null;
+            
         }
 
     }
